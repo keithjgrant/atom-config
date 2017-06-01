@@ -1,0 +1,75 @@
+"*":
+  "atom-css-comb":
+    commonConfigs: "/Users/kgrant/src/web/icegroupweb-styles/.csscomb.json"
+  "atom-material-ui":
+    colors:
+      abaseColor: "#193d65"
+      accentColor: "#fbc459"
+    tabs:
+      compactTabs: true
+      tintedTabBar: true
+    ui:
+      panelContrast: true
+  core:
+    closeEmptyWindows: false
+    destroyEmptyPanes: false
+    disabledPackages: [
+      "atom-css-comb"
+      "atom-beautify"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "kjg-syntax"
+    ]
+    titleBar: "custom"
+  editor:
+    fontFamily: "FiraMono-Regular"
+    fontSize: 12
+    invisibles:
+      eol: " "
+    preferredLineLength: 90
+    scrollPastEnd: true
+    showInvisibles: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+  "exception-reporting":
+    userId: "a415bc28-908e-1e13-cbbc-213f597e9145"
+  "git-diff": {}
+  linter: {}
+  "linter-eslint": {}
+  "linter-ui-default":
+    panelHeight: 69
+  minimap:
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+  "one-dark-ui":
+    hideDockButtons: true
+  perfectionist:
+    cascade: false
+    formatOnSave: true
+    indentSize: 2
+    trimLeadingZero: false
+  "prettier-atom":
+    bracketSpacing: false
+    formatOnSave: false
+    formatOnSaveOptions:
+      enabled: true
+    prettierOptions:
+      bracketSpacing: false
+      printWidth: 90
+      singleQuote: true
+      trailingComma: "es5"
+    printWidth: 90
+    silenceErrors: true
+  stylefmt: {}
+  tabs: {}
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+  "vim-mode-plus":
+    keymapPToPutWithAutoIndent: true
+    startInInsertMode: true
+  welcome:
+    showOnStartup: false
