@@ -7,7 +7,6 @@ storage
 .npm
 
 packages/**
-# But not package-sync
 !packages/package-sync
 
 # Privacy

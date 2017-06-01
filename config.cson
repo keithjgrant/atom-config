@@ -20,7 +20,7 @@
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
-      "kjg-syntax"
+      "azuzy-syntax"
     ]
     titleBar: "custom"
   editor:
@@ -39,7 +39,7 @@
   linter: {}
   "linter-eslint": {}
   "linter-ui-default":
-    panelHeight: 69
+    panelHeight: 81
   minimap:
     plugins:
       "highlight-selected": true
