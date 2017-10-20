@@ -13,19 +13,15 @@
   core:
     closeEmptyWindows: false
     destroyEmptyPanes: false
-    disabledPackages: [
-      "atom-css-comb"
-      "atom-beautify"
-    ]
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
-      "azuzy-syntax"
+      "shindig-syntax"
     ]
     titleBar: "custom"
   editor:
     fontFamily: "FiraMono-Regular"
-    fontSize: 12
+    fontSize: 13
     invisibles:
       eol: " "
     preferredLineLength: 90
@@ -36,10 +32,16 @@
   "exception-reporting":
     userId: "a415bc28-908e-1e13-cbbc-213f597e9145"
   "git-diff": {}
+  hyperclick:
+    darwinTriggerKeys: "altKey,metaKey"
   linter: {}
   "linter-eslint": {}
+  "linter-stylelint":
+    disableWhenNoConfig: false
+    useStandard: true
   "linter-ui-default":
-    panelHeight: 81
+    panelHeight: 66
+    showPanel: true
   minimap:
     plugins:
       "highlight-selected": true
@@ -55,14 +57,21 @@
     bracketSpacing: false
     formatOnSave: false
     formatOnSaveOptions:
+      cssScopes: [
+        "source.css"
+        "source.css.postcss"
+        "source.css.less"
+        "source.css.scss"
+      ]
       enabled: true
+    prettierEslintOptions: {}
     prettierOptions:
       bracketSpacing: false
       printWidth: 90
       singleQuote: true
       trailingComma: "es5"
     printWidth: 90
-    silenceErrors: true
+    silenceErrors: false
   stylefmt: {}
   tabs: {}
   "tree-view":
@@ -70,6 +79,7 @@
     hideVcsIgnoredFiles: true
   "vim-mode-plus":
     keymapPToPutWithAutoIndent: true
+    notifiedCoffeeScriptNoLongerSupportedToExtendVMP: true
     startInInsertMode: true
   welcome:
     showOnStartup: false
