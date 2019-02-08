@@ -23,13 +23,15 @@
 '.source.js':
   'React Component':
     'prefix': 'comp'
-    'body': '''import React from \'react\';
-    import PropTypes from \'prop-types\';
+    'body': '''// @flow
+    import React from \'react\';
 
-    class $1 extends React.Component {
+    type Props = {};
+
+    class $1 extends React.Component<Props> {
       static displayName = \'$1\';
 
-      static propTypes = {};
+      props: Props;
 
       render() {
         return <div />;
@@ -39,6 +41,21 @@
     export default $1;
     '''
 
+  'Console log':
+    'prefix': 'clog'
+    'body': 'console.log($1)'
+
+'.source.flow':
+  'Console log':
+    'prefix': 'clog'
+    'body': 'console.log($1)'
+
+'.source.ts':
+  'Console log':
+    'prefix': 'clog'
+    'body': 'console.log($1)'
+    
+'.source.tsx':
   'Console log':
     'prefix': 'clog'
     'body': 'console.log($1)'
