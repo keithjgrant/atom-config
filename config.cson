@@ -23,7 +23,7 @@
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
-      "shindig-syntax"
+      "shindig-atom-syntax"
     ]
     titleBar: "custom"
   "double-tag":
