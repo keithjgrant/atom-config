@@ -43,7 +43,11 @@
 
   'Console log':
     'prefix': 'clog'
-    'body': 'console.log($1)'
+    'body': 'console.log($1);'
+
+  'Lingui string':
+    'prefix': 'i18n'
+    'body': 'i18n._(t`$1`)'
 
 '.source.flow':
   'Console log':
@@ -54,7 +58,7 @@
   'Console log':
     'prefix': 'clog'
     'body': 'console.log($1)'
-    
+
 '.source.tsx':
   'Console log':
     'prefix': 'clog'

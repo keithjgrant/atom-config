@@ -8,6 +8,8 @@ storage
 
 packages/**
 !packages/package-sync
+recovery
+.atom-socket-secret*
 
 # Privacy
 .apmrc

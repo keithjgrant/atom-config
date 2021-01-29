@@ -14,29 +14,35 @@
     backspaceTriggersAutocomplete: true
     confirmCompletion: "tab always, enter when suggestion explicitly selected"
   core:
+    closeDeletedFileTabs: true
     closeEmptyWindows: false
+    customFileTypes:
+      "source.js.jsx": [
+        "js"
+        "jsx"
+      ]
     destroyEmptyPanes: false
     disabledPackages: [
       "linter-flow"
     ]
+    editor:
+      multiCursorOnClick: true
     packagesWithKeymapsDisabled: []
-    telemetryConsent: "limited"
+    projectHome: "/Users/kegrant/src"
+    telemetryConsent: "no"
     themes: [
       "one-dark-ui"
-      "shindig-syntax"
+      "shindig-atom-syntax"
     ]
     titleBar: "custom"
   "double-tag":
     allowEndTagSync: false
   editor:
     fontFamily: "FiraMono-Regular"
-    fontSize: 13
     invisibles:
       eol: " "
-    preferredLineLength: 90
     scrollPastEnd: true
     showInvisibles: true
-    softWrap: true
     softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "a415bc28-908e-1e13-cbbc-213f597e9145"
@@ -45,13 +51,28 @@
     patternsFilePath: "/Users/kgrant/.atom/config.cson"
   hyperclick:
     darwinTriggerKeys: "altKey,metaKey"
+  "js-hyperclick":
+    extensions: [
+      ".js"
+      ".json"
+      ".node"
+      ".jsx"
+    ]
+    trustedFiles: [
+      {
+        hash: "83cfb0bdacc7cbaf67dc5520b879d19527583d73"
+        trusted: true
+      }
+      {
+        hash: "22ea649dee51aba42010909b9da62123f26ed9ad"
+        trusted: true
+      }
+    ]
   linter: {}
   "linter-eslint":
     disabling:
       disableWhenNoEslintConfig: false
-  "linter-stylelint":
-    disableWhenNoConfig: false
-    useStandard: true
+  "linter-stylelint": {}
   "linter-ui-default":
     panelHeight: 66
   minimap:
@@ -80,6 +101,7 @@
       excludedGlobs: [
         "*.md"
       ]
+      isDisabledIfNoConfigFile: true
       markdownScopes: [
         "none"
       ]
@@ -96,6 +118,8 @@
     hideVcsIgnoredFiles: true
   "vim-mode-plus":
     keymapPToPutWithAutoIndent: true
-    startInInsertMode: true
   welcome:
     showOnStartup: false
+".text.plain":
+  "editor":
+    "softWrap": true
